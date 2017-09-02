@@ -1,0 +1,1391 @@
+
+>>> 2017/09/02-21:31:52.730  [start@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/main.py:75]
+Command line run on 'mmer547-VirtualBox'
+using python executable '/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin/python' :
+['/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin/as_run',
+ 'export']
+
+>>> 2017/09/02-21:31:52.731  [__init__@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:194]
+AsterSystem param :
+{'remote_copy_protocol': 'SCP', 'remote_shell_protocol': 'SSH'}
+
+>>> 2017/09/02-21:31:52.731  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.731  [GetMemInfo@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:872]
+cmd :
+cat /proc/meminfo
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.742  [GetMemInfo@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:879]
+GetMemInfo 'memtotal' returns : 10907
+
+>>> 2017/09/02-21:31:52.742  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.742  [GetCpuInfo@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:850]
+cmd :
+cat /proc/cpuinfo
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.756  [GetCpuInfo@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:858]
+GetCpuInfo 'numcpu' returns : 4
+
+>>> 2017/09/02-21:31:52.757  [get_limits@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/common_func.py:177]
+Limits returned :
+{'interactif_memmax': 10907,
+ 'interactif_mpi_nbpmax': 32,
+ 'interactif_nbpmax': 4,
+ 'interactif_tpsmax': '9999:00:00'}
+
+>>> 2017/09/02-21:31:52.757  [get_limits@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/common_func.py:177]
+Limits returned :
+{'batch_memmax': 10907,
+ 'batch_mpi_nbpmax': 32,
+ 'batch_nbpmax': 4,
+ 'batch_tpsmax': '9999:00:00'}
+
+>>> 2017/09/02-21:31:52.757  [PostConf@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/run.py:584]
+installation dirs (aster_root, confdir, localedir, LANG)
+/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170
+/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/etc/codeaster
+/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/share/locale
+en_US.UTF-8
+
+>>> 2017/09/02-21:31:52.760  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:152]
+source list : (u'export',)
+destination : /tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757
+
+>>> 2017/09/02-21:31:52.761  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:152]
+cmd :
+cp -L -r export /tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.770  [_dbg@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/profil.py:46]
+P memory_limit: 1024.0    P memjob: 1048576    A memjeveux: 128.0
+
+>>> 2017/09/02-21:31:52.770  [_dbg@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/profil.py:46]
+P time_limit: 900.0    P tpsjob: 16    A tpmax: 900.0
+
+>>> 2017/09/02-21:31:52.775  [_dbg@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/profil.py:46]
+P memory_limit: 1024.0    P memjob: 1048576    A memjeveux: 128.0
+
+>>> 2017/09/02-21:31:52.775  [_dbg@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/profil.py:46]
+P time_limit: 900.0    P tpsjob: 16    A tpmax: 900.0
+
+>>> 2017/09/02-21:31:52.776  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:161]
+Input export : /tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757
+AsterProfil object   = 0x10be5a0
+.filename            = /tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757
+P actions make_etude
+P memjob 1048576
+P memory_limit 1024.0
+P mode interactif
+P mpi_nbcpu 1
+P mpi_nbnoeud 1
+P nomjob RunCase_2_Stage_1
+P origine AsterStudy 2017.0
+P studyid 2566-0001-mmer547-VirtualBox
+P time_limit 900.0
+P tpsjob 16
+P version stable
+A memjeveux 128.0
+A tpmax 900.0
+F comm /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/RunCase_2_Stage_1.comm D  1
+F libr /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/_ExportedFromSalomeObject_0_1_1_3.med D  20
+F libr /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sa
+[...]
+
+>>> 2017/09/02-21:31:52.778  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.779  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:801]
+cmd :
+bash -c env
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.784  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:802]
+env_init
+LC_PAPER=en_US.UTF-8
+XDG_VTNR=7
+JOBMANAGER_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+CSF_XmlOcafResource=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/XmlOcafResource
+SALOME_HexoticPLUGINResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hexoticplugin
+HOMARD_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+LC_ADDRESS=en_US.UTF-8
+XDG_SESSION_ID=c2
+EFICAS_NOUVEAU_ROOT=/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0
+CLUTTER_IM_MODULE=xim
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/mmer547
+EUROPLEXUS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+LRELEASE=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/bin/lrelease
+LC_MONETARY=en_US.UTF-8
+OMNIORB_USERS_PATH=/tmp
+GIO_LAUNCHED_DESKTOP_FILE_PID=2543
+ASTER_ROOT=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170
+ASTER_VERSION_DIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster
+SESSION=ubuntu
+GPG_AGENT_INFO=/home/mmer547/.gnupg/S.gpg-agent:0:1
+ADD_TO_QT_PLUGIN_PATH=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/plugins
+SALOMEMECA_MOFEM_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170
+QWTHOME=/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612
+FREETYPE_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411
+SHELL=/bin/bash
+CSF_StandardDefaults=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/StdResource
+XDG_MENU_PREFIX=gnome-
+TCLDIR=/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513
+PARAVIS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+NSHOST=mmer547-VirtualBox
+PYGMENTS_HOME=/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202
+TOOLS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools
+DOCUTILS_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012
+QT_QPA_PLATFORM_PLUGIN_PATH=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/plugins/platforms
+LIBXML_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290
+GEOM_PluginsList=BREPPlugin:STEPPlugin:IGESPlugin:STLPlugin:XAOPlugin:VTKPlugin:AdvancedGEOM
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+CSF_XSMessage=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/XSMessage
+PYUIC=/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/bin/pyuic5
+GRAPHVIZHOME=/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380
+MEDCOUPLING_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0
+HOMARD_REP_EXE=/home/mmer547/salome_meca/V2017/tools/Homard_tool-118
+CYTHON_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232
+PVVERSION=5.1
+KERNEL_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+HOMARD_ASTER_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Homard_aster-117_aster
+LC_NUMERIC=C
+TK_LIBRARY=/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/lib/tk8.5
+SALOME_GHS3DPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/ghs3dplugin
+YACS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+SUITRoot=/home/mmer547/salome_meca/appli_V2017/share/salome
+UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1335
+PARAVISADDONS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0
+GNOME_KEYRING_CONTROL=
+DATA_DIR=/home/mmer547/salome_meca/V2017/modules/SAMPLES_V8_3_0
+APPLI=salome_meca/appli_V2017
+PREFS_CATA_CF=/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome/CF
+QTDIR=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611
+FREEIMAGE_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Freeimage-3160p1
+MISS3D_DIR=/home/mmer547/salome_meca/V2017/tools/Miss3d-66_aster4
+HDF5HOME=/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814
+ADAO_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+CSF_SHMessageStd=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/SHMessageStd
+GTK_MODULES=gail:atk-bridge:unity-gtk-module
+PYTHONEXECUTABLE=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin/python
+SALOME_HYBRIDPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hybridplugin
+ASTER_OLDSTABLE=/home/mmer547/salome_meca/V2017/tools/Code_aster_oldstable-1280
+SIP_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Sip-418
+GMSH_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110
+USER=mmer547
+ROOT_SALOME=/home/mmer547/salome_meca/V2017
+CSF_StandardLiteDefaults=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/StdResource
+CGNSHOME=/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134
+QT_ACCESSIBILITY=1
+LC_TELEPHONE=en_US.UTF-8
+HEXABLOCK_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+LD_LIBRARY_PATH=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/appli_V2017/lib/salome:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Tix8.4.3:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Togl1.7:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib:/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350/lib:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/Lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps4-4100_aster3/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_oldstable-1280/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/lib:/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520/lib:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib/graphviz:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gl2ps-139svn20160620/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/lib:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib:/home/mmer547/salome_meca/V2017/prerequisites/Freeimage-3160p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tbb-424/lib:/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/lib:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612/lib:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Opencv-231/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/lib:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/lib/Linux_64:/home/mmer547/salome_meca/V2017/tools/Netgen-531/lib:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/debianForSalome/lib:/lib64:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Tix8.4.3:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Togl1.7:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib:/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350/lib:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/Lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps4-4100_aster3/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_oldstable-1280/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/lib:/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520/lib:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib/graphviz:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gl2ps-139svn20160620/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/lib:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib:/home/mmer547/salome_meca/V2017/prerequisites/Freeimage-3160p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tbb-424/lib:/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/lib:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612/lib:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Opencv-231/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/lib:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/lib/Linux_64:/home/mmer547/salome_meca/V2017/tools/Netgen-531/lib:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/debianForSalome/lib:/lib64
+ASTERSTUDY_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+OMNIORB_CONFIG=/tmp/.omniORB_mmer547_last.cfg
+CASROOT=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1
+ECREVISSE_OLD_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Ecrevisse_old-321
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+CPPUNIT_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132
+SMESH_DIR=/home/mmer547/salome_meca/V2017/modules/SMESH_V8_3_0
+SALOMEMECA_PYUTILS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_pyutils-20170
+TCL_LIBRARY=/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/tcl8.5
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+DEBIANFORSALOME=/home/mmer547/salome_meca/V2017/prerequisites/debianForSalome
+LIBBATCH_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+CSF_MDTVFontDirectory=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/FontMFT
+CSF_UnitsDefinition=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/UnitsAPI/Units.dat
+SCOTCHDIR=/home/mmer547/salome_meca/V2017/prerequisites/Scotch-5111
+GMSH_BIN_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Gmsh_bin-2120Linux64/bin
+SESSION_MANAGER=local/mmer547-VirtualBox:@/tmp/.ICE-unix/1624,unix/mmer547-VirtualBox:/tmp/.ICE-unix/1624
+MPLCONFIGDIR=/home/mmer547/.config/salome/matplotlib-1.4.3
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+EFICAS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+HexoticPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+GIO_LAUNCHED_DESKTOP_FILE=/home/mmer547/Desktop/salome_meca_V2017.desktop
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+NETGENPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PREREQUISITES_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites
+PARAVIS_DIR=/home/mmer547/salome_meca/V2017/modules/PARAVIS_V8_3_0
+MMGT_REENTRANT=1
+QTVERSION=5
+PATH=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/outils:/home/mmer547/salome_meca/appli_V2017/bin/salome:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/bin:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/bin:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/bin:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin:/home/mmer547/salome_meca/V2017/tools/Gibi-20008:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh_bin-2120Linux64/bin:/home/mmer547/salome_meca/V2017/tools/Homard_aster-117_aster:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/bin:/home/mmer547/salome_meca/V2017/tools/Miss3d-66_aster4:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/bin:/home/mmer547/salome_meca/V2017/prerequisites/Scotch-5111/bin:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/bin:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/bin:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/bin:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/bin:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/bin:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/bin:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/bin:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/bin/Linux_64:/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/bin:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/bin:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/bin:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin:/home/mmer547/salome_meca/V2017/tools/Gibi-20008:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh_bin-2120Linux64/bin:/home/mmer547/salome_meca/V2017/tools/Homard_aster-117_aster:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/bin:/home/mmer547/salome_meca/V2017/tools/Miss3d-66_aster4:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/bin:/home/mmer547/salome_meca/V2017/prerequisites/Scotch-5111/bin:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/bin:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/bin:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/bin:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/bin:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/bin:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/bin:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/bin:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/bin/Linux_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DESKTOP_SESSION=ubuntu
+CSF_SALOMEDS_ResourcesDefaults=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/kernel
+HYBRIDPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+BOOSTDIR=/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520
+BLSURFPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+HDF5_DISABLE_VERSION_CHECK=1
+SALOME_NETGENPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/netgenplugin
+QT_IM_MODULE=ibus
+SMESH_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+GHS3DPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PVHOME=/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF
+_=/usr/bin/env
+QT_QPA_PLATFORMTHEME=appmenu-qt5
+LC_IDENTIFICATION=en_US.UTF-8
+JOB=dbus
+PWD=/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922
+NUMPY_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192
+HEXABLOCKPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+XDG_SESSION_TYPE=x11
+MESHGEMS_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245
+DISABLE_FPE=1
+XMODIFIERS=@im=ibus
+MESHGEMSHOME=/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245
+PYQT_SIPS=/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/share/sip
+SALOMEMECA_TRANSLATOR_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170
+TFELHOME=/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300
+CSF_PluginDefaults=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/StdResource
+LANG=en_US.UTF-8
+MEDFICHIER_INSTALL_DIR=/home/mmer547/salome_meca/V2017/tools/Medfichier-321
+NETGENHOME=/home/mmer547/salome_meca/V2017/tools/Netgen-531
+GNOME_KEYRING_PID=
+MED_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PYTHONSTARTUP=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/pythonrc.py
+GDM_LANG=en
+MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+SALOME_HEXABLOCKPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hexablockplugin
+LC_MEASUREMENT=en_US.UTF-8
+PV_PLUGIN_PATH=/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/modules/PARAVIS_V8_3_0/lib/paraview:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib:/home/mmer547/salome_meca/appli_V2017/lib/paraview:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/modules/PARAVIS_V8_3_0/lib/paraview:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib
+CSF_ShHealingDefaults=/tmp/logs/mmer547/env_2811
+HOMARD_EXE=homard
+PYTHONHOME=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710
+IM_CONFIG_PHASE=1
+COMPIZ_CONFIG_PROFILE=ubuntu
+SalomeAppConfig=/home/mmer547/salome_meca/appli_V2017:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/gui:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/asterstudy:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/geom:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/smesh:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/paravis:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/med:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/yacs:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/jobmanager:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/homard:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/adao:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/eficas:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hybridplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/blsurfplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/europlexus:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hexoticplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/netgenplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/ghs3dplugin::
+ASTER_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PAPERSIZE=letter
+SALOMEMECA_PLUGINS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public
+__place_holder__=0
+GDMSESSION=ubuntu
+GL2PS_INSTALL_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Gl2ps-139svn20160620
+METISDIR=/home/mmer547/salome_meca/V2017/prerequisites/Metis-40,/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1
+GTK2_MODULES=overlay-scrollbar
+NSPORT=2811
+SESSIONTYPE=gnome-session
+TKDIR=/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513
+SALOME_BATCH=0
+WISHEXECUTABLE=/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/bin/wish8.5
+PYQT_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560
+ASTER_STABLE=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca
+GENERICSOLVER_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+HOME=/home/mmer547
+SHLVL=3
+XDG_SEAT=seat0
+SALOME_BLSURFPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/blsurfplugin
+SALOME_PLUGINS_PATH=/home/mmer547/salome_meca/V2017/plugins:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/plugins:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome
+ZCRACKSHOME=/home/mmer547/salome_meca/V2017/prerequisites/Zcracks-287
+LANGUAGE=en
+SALOMEMECA_EXTRA_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_extra-20170_public
+MERCURIAL_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261
+GEOM_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+SALOME_trace=local
+CSF_UnitsLexicon=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/UnitsAPI/Lexi_Expr.dat
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LIBGL_ALWAYS_SOFTWARE=1
+LIBBATCH_NODEFILE=nodefile-TRdTWvTZcC
+OMNIORB_USER_PATH=/tmp
+PYTHONPATH=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/appli_V2017/lib/python2.7/site-packages/salome/shared_modules:/home/mmer547/salome_meca/appli_V2017/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/appli_V2017/lib/salome:/home/mmer547/salome_meca/appli_V2017/bin/salome:/home/mmer547/salome_meca/V2017/modules/KERNEL_V8_3_0/bin/salome/appliskel:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_pyutils-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages/omniidl_be:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Jinja-273/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Matplotlib-143/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/paraview/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Scipy-0151/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/asterstudy:/home/mmer547/salome_meca/V2017/modules/SMESH_V8_3_0/share/salome/plugins/smesh/Verima:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/H5py-250/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/UiQT5:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/Editeur:/home/mmer547/salome_meca/V2017/prerequisites/Pkgconfig-110/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome/CF:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/prerequisites/Lxml-340/lib/python2.7/site-packages:/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_pyutils-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages/omniidl_be:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Jinja-273/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Matplotlib-143/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/paraview/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Scipy-0151/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/asterstudy:/home/mmer547/salome_meca/V2017/modules/SMESH_V8_3_0/share/salome/plugins/smesh/Verima:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/H5py-250/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/UiQT5:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/Editeur:/home/mmer547/salome_meca/V2017/prerequisites/Pkgconfig-110/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome/CF:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/prerequisites/Lxml-340/lib/python2.7/site-packages
+XDG_SESSION_DESKTOP=ubuntu
+LOGNAME=mmer547
+BOOST_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520
+ASTER_TMPDIR=/tmp
+DSCCODE_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+QWT_INCLUDES=/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612/include
+ABSOLUTE_APPLI_PATH=/home/mmer547/salome_meca/appli_V2017
+SALOMEPATH=/home/mmer547/salome_meca/appli_V2017
+EFICAS_ROOT=/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-q3rOcWqpqW
+QT4_IM_MODULE=fcitx
+ECREVISSE_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Ecrevisse-322
+MODULES_ROOT_DIR=/home/mmer547/salome_meca/V2017/modules
+SALOME_StdMeshersResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/smesh
+PV_MACRO_PATH=/home/mmer547/.config/salome/Macros
+GUI_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+SMESH_MeshersList=StdMeshers:HexoticPLUGIN:NETGENPlugin:BLSURFPlugin:HEXABLOCKPlugin:GHS3DPlugin:HYBRIDPlugin
+OPENTURNS_MODULE_CONF_FILE=/home/mmer547/salome_meca/V2017/tools/Salomemeca_extra-20170_public/custom/config_file_template.py
+VTK_AUTOLOAD_PATH=/home/mmer547/salome_meca/appli_V2017/lib/paraview
+INSTANCE=
+LIBXSLT_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128
+DISPLAY=:0
+XDG_RUNTIME_DIR=/run/user/1000
+LXML_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Lxml-340
+QT_PLUGIN_PATH=
+LAPACKDIR=/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350
+OMNIORBPY_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36
+GIBI_DIR=/home/mmer547/salome_meca/V2017/tools/Gibi-20008
+CSF_MDTVTexturesDirectory=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/Textures
+XDG_CURRENT_DESKTOP=Unity
+GTK_IM_MODULE=fcitx
+CSF_GEOMDS_ResourcesDefaults=/tmp/logs/mmer547/env_2811
+MED3HOME=/home/mmer547/salome_meca/V2017/tools/Medfichier-321
+LC_TIME=en_US.UTF-8
+ASTER_ETC=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/etc
+OMNIORB_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416
+MATPLOTLIB_HOME=/home/mmer547/salome_meca/V2017/prerequisites/Matplotlib-143
+PYTHON_INCLUDE=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/include/python2.7
+CSF_SHMessage=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/SHMessage
+LC_NAME=en_US.UTF-8
+XAUTHORITY=/home/mmer547/.Xauthority
+
+
+>>> 2017/09/02-21:31:52.785  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.785  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:808]
+cmd :
+bash -c ". /home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster/profile.sh && env"
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.795  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:809]
+env_prof
+LC_PAPER=en_US.UTF-8
+XDG_VTNR=7
+JOBMANAGER_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+CSF_XmlOcafResource=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/XmlOcafResource
+SALOME_HexoticPLUGINResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hexoticplugin
+HOMARD_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+LC_ADDRESS=en_US.UTF-8
+XDG_SESSION_ID=c2
+EFICAS_NOUVEAU_ROOT=/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0
+CLUTTER_IM_MODULE=xim
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/mmer547
+EUROPLEXUS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+LRELEASE=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/bin/lrelease
+LC_MONETARY=en_US.UTF-8
+OMNIORB_USERS_PATH=/tmp
+GIO_LAUNCHED_DESKTOP_FILE_PID=2543
+ASTER_ROOT=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170
+ASTER_VERSION_DIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster
+SESSION=ubuntu
+GPG_AGENT_INFO=/home/mmer547/.gnupg/S.gpg-agent:0:1
+ADD_TO_QT_PLUGIN_PATH=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/plugins
+SALOMEMECA_MOFEM_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170
+QWTHOME=/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612
+FREETYPE_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411
+SHELL=/bin/bash
+CSF_StandardDefaults=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/StdResource
+XDG_MENU_PREFIX=gnome-
+TCLDIR=/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513
+PARAVIS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+NSHOST=mmer547-VirtualBox
+PYGMENTS_HOME=/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202
+TOOLS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools
+DOCUTILS_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012
+QT_QPA_PLATFORM_PLUGIN_PATH=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/plugins/platforms
+LIBXML_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290
+GEOM_PluginsList=BREPPlugin:STEPPlugin:IGESPlugin:STLPlugin:XAOPlugin:VTKPlugin:AdvancedGEOM
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+CSF_XSMessage=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/XSMessage
+PYUIC=/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/bin/pyuic5
+GRAPHVIZHOME=/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380
+MEDCOUPLING_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0
+HOMARD_REP_EXE=/home/mmer547/salome_meca/V2017/tools/Homard_tool-118
+CYTHON_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232
+PVVERSION=5.1
+KERNEL_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+HOMARD_ASTER_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Homard_aster-117_aster
+LC_NUMERIC=C
+TK_LIBRARY=/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/lib/tk8.5
+SALOME_GHS3DPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/ghs3dplugin
+YACS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+SUITRoot=/home/mmer547/salome_meca/appli_V2017/share/salome
+ASTER_ELEMENTSDIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster
+UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1335
+PARAVISADDONS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0
+GNOME_KEYRING_CONTROL=
+DATA_DIR=/home/mmer547/salome_meca/V2017/modules/SAMPLES_V8_3_0
+APPLI=salome_meca/appli_V2017
+PREFS_CATA_CF=/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome/CF
+QTDIR=/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611
+FREEIMAGE_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Freeimage-3160p1
+MISS3D_DIR=/home/mmer547/salome_meca/V2017/tools/Miss3d-66_aster4
+HDF5HOME=/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814
+ADAO_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+CSF_SHMessageStd=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/SHMessageStd
+GTK_MODULES=gail:atk-bridge:unity-gtk-module
+PYTHONEXECUTABLE=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin/python
+SALOME_HYBRIDPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hybridplugin
+ASTER_OLDSTABLE=/home/mmer547/salome_meca/V2017/tools/Code_aster_oldstable-1280
+SIP_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Sip-418
+GMSH_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110
+USER=mmer547
+ROOT_SALOME=/home/mmer547/salome_meca/V2017
+CSF_StandardLiteDefaults=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/StdResource
+CGNSHOME=/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134
+QT_ACCESSIBILITY=1
+LC_TELEPHONE=en_US.UTF-8
+HEXABLOCK_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+LD_LIBRARY_PATH=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster/lib:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/lib:/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350/lib:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/libseq:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/V2017/prerequisites/Scotch_aster-604_aster6/SEQ/lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/HOMARD_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/BLSURFPLUGIN_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/GENERICSOLVER_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/HYBRIDPLUGIN_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/YACS_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/HEXABLOCKPLUGIN_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/HEXABLOCK_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/PARAVIS_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/SMESH_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/MED_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/GEOM_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/ASTERSTUDY_20170/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/GUI_V8_3_asterstudy/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/KERNEL_V8_3_0/lib/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Paravisaddons-V8_3_0-cm362-pv512/lib:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Netgen-531-occ710p1-tcl8513-tix843-tk8513-togl17/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Meshgems-245/lib/Linux_64:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Libxslt-1128-xml290/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Gmsh-2110-cm362-la350-occ710p1-tbb424/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Opencv-231-cm362-py2710-tbb424/lib:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Medcoupling-V8_3_0/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Qwt-612-qt561/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Paraview-v512_EDF-cm362-dox1831-gl2ps139-gr2380-hd1814-xml2290-py2710-qt561/lib/paraview-5.1:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Qt-5611/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Occ-710p1-freeimg3160-freetp2411-gl2ps139-tbb424/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Tbb-424/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Freeimage-3160p1/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Libxml2-290-py2710/lib:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Libbatch-V2_3_1-cm362-py2710-sw208/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Cppunit-1132/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Gl2ps-139svn20160620EDFp1-cm362/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Graphviz-2380/lib/graphviz:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Graphviz-2380/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Boost-1520-py2710/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Freetype-2411/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Mumps4-4100_aster3/SEQ/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Mfront_stable-TFEL202/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Metis-40EDFp1/Lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Togl1.7:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Cgnslib-3134-cm362-hd1814/lib:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Omniorb-416-py2710/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Tix8.4.3:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Sip-418-py2710/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/appli_V2017/lib/salome:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Tix8.4.3:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Togl1.7:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib:/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350/lib:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/Lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps4-4100_aster3/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_oldstable-1280/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/lib:/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520/lib:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib/graphviz:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gl2ps-139svn20160620/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/lib:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib:/home/mmer547/salome_meca/V2017/prerequisites/Freeimage-3160p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tbb-424/lib:/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/lib:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612/lib:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Opencv-231/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/lib:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/lib/Linux_64:/home/mmer547/salome_meca/V2017/tools/Netgen-531/lib:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/debianForSalome/lib:/lib64:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/lib:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Tix8.4.3:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/Togl1.7:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib:/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350/lib:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/Lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps4-4100_aster3/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_oldstable-1280/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/lib:/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520/lib:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib/graphviz:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gl2ps-139svn20160620/lib:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/lib:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib:/home/mmer547/salome_meca/V2017/prerequisites/Freeimage-3160p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Tbb-424/lib:/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/lib:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612/lib:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Opencv-231/lib:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/lib:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/lib:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/lib/Linux_64:/home/mmer547/salome_meca/V2017/tools/Netgen-531/lib:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/lib:/usr/lib/atlas-base/atlas:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster:/home/mmer547/salome_meca/V2017/prerequisites/debianForSalome/lib:/lib64
+ASTERSTUDY_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+OMNIORB_CONFIG=/tmp/.omniORB_mmer547_last.cfg
+CASROOT=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1
+ECREVISSE_OLD_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Ecrevisse_old-321
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+CPPUNIT_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132
+SMESH_DIR=/home/mmer547/salome_meca/V2017/modules/SMESH_V8_3_0
+SALOMEMECA_PYUTILS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_pyutils-20170
+TCL_LIBRARY=/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/lib/tcl8.5
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+DEBIANFORSALOME=/home/mmer547/salome_meca/V2017/prerequisites/debianForSalome
+LIBBATCH_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+CSF_MDTVFontDirectory=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/FontMFT
+CSF_UnitsDefinition=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/UnitsAPI/Units.dat
+SCOTCHDIR=/home/mmer547/salome_meca/V2017/prerequisites/Scotch-5111
+GMSH_BIN_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Gmsh_bin-2120Linux64/bin
+SESSION_MANAGER=local/mmer547-VirtualBox:@/tmp/.ICE-unix/1624,unix/mmer547-VirtualBox:/tmp/.ICE-unix/1624
+MPLCONFIGDIR=/home/mmer547/.config/salome/matplotlib-1.4.3
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+EFICAS_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+ASTER_DATADIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/share/aster
+HexoticPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+GIO_LAUNCHED_DESKTOP_FILE=/home/mmer547/Desktop/salome_meca_V2017.desktop
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+NETGENPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PREREQUISITES_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites
+PARAVIS_DIR=/home/mmer547/salome_meca/V2017/modules/PARAVIS_V8_3_0
+MMGT_REENTRANT=1
+QTVERSION=5
+PATH=/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/bin:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/outils:/home/mmer547/salome_meca/appli_V2017/bin/salome:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/bin:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/bin:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/bin:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin:/home/mmer547/salome_meca/V2017/tools/Gibi-20008:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh_bin-2120Linux64/bin:/home/mmer547/salome_meca/V2017/tools/Homard_aster-117_aster:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/bin:/home/mmer547/salome_meca/V2017/tools/Miss3d-66_aster4:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/bin:/home/mmer547/salome_meca/V2017/prerequisites/Scotch-5111/bin:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/bin:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/bin:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/bin:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/bin:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/bin:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/bin:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/bin:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/bin/Linux_64:/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/bin:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/bin:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/bin:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1:/home/mmer547/salome_meca/V2017/prerequisites/Metis-40/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin:/home/mmer547/salome_meca/V2017/tools/Gibi-20008:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh_bin-2120Linux64/bin:/home/mmer547/salome_meca/V2017/tools/Homard_aster-117_aster:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/bin:/home/mmer547/salome_meca/V2017/prerequisites/Mfront_stable-TFEL202/bin:/home/mmer547/salome_meca/V2017/tools/Miss3d-66_aster4:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/bin:/home/mmer547/salome_meca/V2017/prerequisites/Scotch-5111/bin:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/bin:/home/mmer547/salome_meca/V2017/prerequisites/Freetype-2411/bin:/home/mmer547/salome_meca/V2017/prerequisites/Graphviz-2380/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cppunit-1132/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/bin:/home/mmer547/salome_meca/V2017/prerequisites/Qt-5611/bin:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/bin:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/bin:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/bin:/home/mmer547/salome_meca/V2017/prerequisites/Gmsh-2110/bin:/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128/bin:/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245/bin/Linux_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DESKTOP_SESSION=ubuntu
+CSF_SALOMEDS_ResourcesDefaults=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/kernel
+ASTER_LIBDIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster
+HYBRIDPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+BOOSTDIR=/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520
+BLSURFPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+HDF5_DISABLE_VERSION_CHECK=1
+SALOME_NETGENPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/netgenplugin
+QT_IM_MODULE=ibus
+SMESH_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+GHS3DPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PVHOME=/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF
+QT_QPA_PLATFORMTHEME=appmenu-qt5
+LC_IDENTIFICATION=en_US.UTF-8
+JOB=dbus
+PWD=/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922
+NUMPY_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192
+HEXABLOCKPLUGIN_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+XDG_SESSION_TYPE=x11
+MESHGEMS_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245
+DISABLE_FPE=1
+XMODIFIERS=@im=ibus
+MESHGEMSHOME=/home/mmer547/salome_meca/V2017/prerequisites/Meshgems-245
+PYQT_SIPS=/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/share/sip
+SALOMEMECA_TRANSLATOR_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170
+TFELHOME=/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300
+CSF_PluginDefaults=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/StdResource
+LANG=en_US.UTF-8
+MEDFICHIER_INSTALL_DIR=/home/mmer547/salome_meca/V2017/tools/Medfichier-321
+NETGENHOME=/home/mmer547/salome_meca/V2017/tools/Netgen-531
+GNOME_KEYRING_PID=
+MED_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PYTHONSTARTUP=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/pythonrc.py
+GDM_LANG=en
+MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+SALOME_HEXABLOCKPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hexablockplugin
+LC_MEASUREMENT=en_US.UTF-8
+PV_PLUGIN_PATH=/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/modules/PARAVIS_V8_3_0/lib/paraview:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib:/home/mmer547/salome_meca/appli_V2017/lib/paraview:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/modules/PARAVIS_V8_3_0/lib/paraview:/home/mmer547/salome_meca/V2017/tools/Paravisaddons-V8_3_0/lib
+CSF_ShHealingDefaults=/tmp/logs/mmer547/env_2811
+HOMARD_EXE=homard
+PYTHONHOME=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710
+IM_CONFIG_PHASE=1
+COMPIZ_CONFIG_PROFILE=ubuntu
+SalomeAppConfig=/home/mmer547/salome_meca/appli_V2017:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/gui:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/asterstudy:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/geom:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/smesh:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/paravis:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/med:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/yacs:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/jobmanager:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/homard:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/adao:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/eficas:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hybridplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/blsurfplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/europlexus:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/hexoticplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/netgenplugin:/home/mmer547/salome_meca/appli_V2017/share/salome/resources/ghs3dplugin::
+ASTER_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+PAPERSIZE=letter
+SALOMEMECA_PLUGINS_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public
+__place_holder__=0
+GDMSESSION=ubuntu
+GL2PS_INSTALL_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Gl2ps-139svn20160620
+METISDIR=/home/mmer547/salome_meca/V2017/prerequisites/Metis-40,/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1
+GTK2_MODULES=overlay-scrollbar
+NSPORT=2811
+SESSIONTYPE=gnome-session
+TKDIR=/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513
+SALOME_BATCH=0
+WISHEXECUTABLE=/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/bin/wish8.5
+PYQT_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560
+ASTER_STABLE=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca
+GENERICSOLVER_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+HOME=/home/mmer547
+SHLVL=3
+XDG_SEAT=seat0
+SALOME_BLSURFPluginResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/blsurfplugin
+SALOME_PLUGINS_PATH=/home/mmer547/salome_meca/V2017/plugins:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/plugins:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome
+ZCRACKSHOME=/home/mmer547/salome_meca/V2017/prerequisites/Zcracks-287
+LANGUAGE=en
+ASTER_LOCALEDIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/share/locale/aster
+SALOMEMECA_EXTRA_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Salomemeca_extra-20170_public
+MERCURIAL_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261
+GEOM_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+SALOME_trace=local
+CSF_UnitsLexicon=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/UnitsAPI/Lexi_Expr.dat
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LIBGL_ALWAYS_SOFTWARE=1
+LIBBATCH_NODEFILE=nodefile-TRdTWvTZcC
+OMNIORB_USER_PATH=/tmp
+PYTHONPATH=.:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Pkgconfig-110-py2710/lib/python2.7/site-packages/pkgconfig-1.1.0-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/H5py-250-cyt0232-hdf51814-num192-py2710-set06c11/lib/python2.7/site-packages/h5py-2.5.0-py2.7-linux-x86_64.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/six-1.10.0-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/lib/python2.7/site-packages/matplotlib-1.4.3-py2.7-linux-x86_64.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/pyparsing-2.2.0-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/pytz-2017.2-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/python_dateutil-2.6.1-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Jinja-273-py2710-set06c11/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Jinja-273-py2710-set06c11/MarkupSafe-1.0-py2.7-linux-x86_64.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Pygments-202-py2710-set06c11/lib/python2.7/site-packages/Pygments-2.0.2-py2.7.egg:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Pkgconfig-110-py2710/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/ASTER_20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/H5py-250-cyt0232-hdf51814-num192-py2710-set06c11/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Cython-0232-py2710/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/SMESH_V8_3_0/share/salome/plugins/smesh/Verima:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/ASTERSTUDY_20170/lib/python2.7/site-packages/asterstudy:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/modules/install/ASTERSTUDY_20170/lib/python2.7/site-packages/salome:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Medcoupling-V8_3_0/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Scipy-0151-la350-nu192-py2710-sw208/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Paraview-v512_EDF-cm362-dox1831-gl2ps139-gr2380-hd1814-xml2290-py2710-qt561/lib/paraview-5.1/site-packages/paraview/vtk:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Paraview-v512_EDF-cm362-dox1831-gl2ps139-gr2380-hd1814-xml2290-py2710-qt561/lib/paraview-5.1/site-packages/vtk:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Paraview-v512_EDF-cm362-dox1831-gl2ps139-gr2380-hd1814-xml2290-py2710-qt561/lib/paraview-5.1/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Paraview-v512_EDF-cm362-dox1831-gl2ps139-gr2380-hd1814-xml2290-py2710-qt561/lib/paraview-5.1:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Pyqt-560-py2710-qt561-sip418/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Jinja-273-py2710-set06c11/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Libxml2-290-py2710/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Libbatch-V2_3_1-cm362-py2710-sw208/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Omniorbpy-36-orb416-py2710/lib/python2.7/site-packages/omniidl_be:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Omniorbpy-36-orb416-py2710/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Docutils-012-py2710/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Pygments-202-py2710-set06c11/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Omniorb-416-py2710/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Sip-418-py2710/lib/python2.7/site-packages:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Eficas_nouveau-V8_3_0-cm362-pyqt560-py2710-qt561-sip418:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Eficas_nouveau-V8_3_0-cm362-pyqt560-py2710-qt561-sip418/UiQT5:/home/A21173/smeca/yamm_build/V2017_build/V2017_public/tools/install/Eficas_nouveau-V8_3_0-cm362-pyqt560-py2710-qt561-sip418/Editeur:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Omniorbpy-36-orb416-py2710/lib/python2.7/site-packages/omniORB/COS:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/appli_V2017/lib/python2.7/site-packages/salome/shared_modules:/home/mmer547/salome_meca/appli_V2017/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/appli_V2017/lib/salome:/home/mmer547/salome_meca/appli_V2017/bin/salome:/home/mmer547/salome_meca/V2017/modules/KERNEL_V8_3_0/bin/salome/appliskel:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_pyutils-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages/omniidl_be:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Jinja-273/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Matplotlib-143/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/paraview/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Scipy-0151/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/asterstudy:/home/mmer547/salome_meca/V2017/modules/SMESH_V8_3_0/share/salome/plugins/smesh/Verima:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/H5py-250/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/UiQT5:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/Editeur:/home/mmer547/salome_meca/V2017/prerequisites/Pkgconfig-110/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome/CF:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/prerequisites/Lxml-340/lib/python2.7/site-packages:/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pygments-202/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mercurial-261/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Numpy-192/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_pyutils-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Docutils-012/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36/lib/python2.7/site-packages/omniidl_be:/home/mmer547/salome_meca/V2017/tools/Libbatch-V2_3_1/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Libxml2-290/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Jinja-273/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Pyqt-560/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Matplotlib-143/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/paraview/vtk:/home/mmer547/salome_meca/V2017/prerequisites/Scipy-0151/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Medcoupling-V8_3_0/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/modules/ASTERSTUDY_20170/lib/python2.7/site-packages/asterstudy:/home/mmer547/salome_meca/V2017/modules/SMESH_V8_3_0/share/salome/plugins/smesh/Verima:/home/mmer547/salome_meca/V2017/prerequisites/Cython-0232/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/prerequisites/H5py-250/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/UiQT5:/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0/Editeur:/home/mmer547/salome_meca/V2017/prerequisites/Pkgconfig-110/lib/python2.7/site-packages:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_plugins-20170_public/lib/python2.7/site-packages/salome/CF:/home/mmer547/salome_meca/V2017/tools/Salomemeca_mofem-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/tools/Salomemeca_translator-20170/lib/python2.7/site-packages/salome:/home/mmer547/salome_meca/V2017/prerequisites/Lxml-340/lib/python2.7/site-packages
+XDG_SESSION_DESKTOP=ubuntu
+LOGNAME=mmer547
+BOOST_ROOT=/home/mmer547/salome_meca/V2017/prerequisites/Boost-1520
+ASTER_TMPDIR=/tmp
+DSCCODE_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+QWT_INCLUDES=/home/mmer547/salome_meca/V2017/prerequisites/Qwt-612/include
+ABSOLUTE_APPLI_PATH=/home/mmer547/salome_meca/appli_V2017
+SALOMEPATH=/home/mmer547/salome_meca/appli_V2017
+EFICAS_ROOT=/home/mmer547/salome_meca/V2017/tools/Eficas_nouveau-V8_3_0
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-q3rOcWqpqW
+QT4_IM_MODULE=fcitx
+ECREVISSE_ROOT_DIR=/home/mmer547/salome_meca/V2017/tools/Ecrevisse-322
+MODULES_ROOT_DIR=/home/mmer547/salome_meca/V2017/modules
+SALOME_StdMeshersResources=/home/mmer547/salome_meca/appli_V2017/share/salome/resources/smesh
+PV_MACRO_PATH=/home/mmer547/.config/salome/Macros
+GUI_ROOT_DIR=/home/mmer547/salome_meca/appli_V2017
+SMESH_MeshersList=StdMeshers:HexoticPLUGIN:NETGENPlugin:BLSURFPlugin:HEXABLOCKPlugin:GHS3DPlugin:HYBRIDPlugin
+OPENTURNS_MODULE_CONF_FILE=/home/mmer547/salome_meca/V2017/tools/Salomemeca_extra-20170_public/custom/config_file_template.py
+VTK_AUTOLOAD_PATH=/home/mmer547/salome_meca/appli_V2017/lib/paraview
+INSTANCE=
+LIBXSLT_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Libxslt-1128
+DISPLAY=:0
+XDG_RUNTIME_DIR=/run/user/1000
+LXML_ROOT_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Lxml-340
+QT_PLUGIN_PATH=
+LAPACKDIR=/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350
+OMNIORBPY_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Omniorbpy-36
+GIBI_DIR=/home/mmer547/salome_meca/V2017/tools/Gibi-20008
+CSF_MDTVTexturesDirectory=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/Textures
+XDG_CURRENT_DESKTOP=Unity
+GTK_IM_MODULE=fcitx
+CSF_GEOMDS_ResourcesDefaults=/tmp/logs/mmer547/env_2811
+MED3HOME=/home/mmer547/salome_meca/V2017/tools/Medfichier-321
+LC_TIME=en_US.UTF-8
+ASTER_ETC=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/etc
+OMNIORB_DIR=/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416
+MATPLOTLIB_HOME=/home/mmer547/salome_meca/V2017/prerequisites/Matplotlib-143
+PYTHON_INCLUDE=/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/include/python2.7
+CSF_SHMessage=/home/mmer547/salome_meca/V2017/prerequisites/Occ-710p1/src/SHMessage
+LC_NAME=en_US.UTF-8
+XAUTHORITY=/home/mmer547/.Xauthority
+_=/usr/bin/env
+
+
+>>> 2017/09/02-21:31:52.805  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:817]
+AddToEnv set : PYTHONPATH=.:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Pkgconfig-110-py2710/lib/python2.7/site-packages/pkgconfig-1.1.0-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/H5py-250-cyt0232-hdf51814-num192-py2710-set06c11/lib/python2.7/site-packages/h5py-2.5.0-py2.7-linux-x86_64.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/six-1.10.0-py2.7.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/install/Matplotlib-143EDFp1-num192-pyqt560-py2710-set06c11/lib/python2.7/site-packages/matplotlib-1.4.3-py2.7-linux-x86_64.egg:/home/A21173/smeca/yamm_build/V2017_build/prerequisites/instal
+[...]
+
+>>> 2017/09/02-21:31:52.805  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:817]
+AddToEnv set : ASTER_LOCALEDIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/share/locale/aster
+
+>>> 2017/09/02-21:31:52.805  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:817]
+AddToEnv set : ASTER_DATADIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/share/aster
+
+>>> 2017/09/02-21:31:52.806  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:817]
+AddToEnv set : ASTER_LIBDIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster
+
+>>> 2017/09/02-21:31:52.806  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:817]
+AddToEnv set : LD_LIBRARY_PATH=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster/lib:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/lib:/home/mmer547/salome_meca/V2017/prerequisites/Lapack-350/lib:/home/mmer547/salome_meca/V2017/tools/Medfichier-321/lib:/home/mmer547/salome_meca/V2017/prerequisites/Metis_aster-510_aster1/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/lib:/home/mmer547/salome_meca/V2017/prerequisites/Mumps-511_aster2/SEQ/libseq:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/lib:/home/mmer547/salome_meca/V2017/prerequisites/Scotch_aster-604_aster6/SEQ/lib:/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-
+[...]
+
+>>> 2017/09/02-21:31:52.806  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:817]
+AddToEnv set : ASTER_ELEMENTSDIR=/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster
+
+>>> 2017/09/02-21:31:52.806  [AddToEnv@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:817]
+AddToEnv set : PATH=/home/mmer547/salome_meca/V2017/prerequisites/Mfront-TFEL300/bin:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/bin:/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/outils:/home/mmer547/salome_meca/appli_V2017/bin/salome:/home/mmer547/salome_meca/V2017/prerequisites/Tcl-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Tk-8513/bin:/home/mmer547/salome_meca/V2017/prerequisites/Python-2710/bin:/home/mmer547/salome_meca/V2017/prerequisites/Sip-418/bin:/home/mmer547/salome_meca/V2017/prerequisites/Omniorb-416/bin:/home/mmer547/salome_meca/V2017/prerequisites/Hdf5-1814/bin:/home/mmer547/salome_meca/V2017/prerequisites/Cgnslib-3134/bin:/home/mmer547/salome_meca/V2017/prerequisit
+[...]
+
+>>> 2017/09/02-21:31:52.808  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:201]
+set_rep_trav() > local=/tmp/mmer547-mmer547-VirtualBox-interactif.2757, global=/tmp/mmer547-mmer547-VirtualBox-interactif.2757
+
+>>> 2017/09/02-21:31:52.812  [_dbg@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/profil.py:46]
+P memory_limit: 1024.0    P memjob: 1048576    A memjeveux: 128.0
+
+>>> 2017/09/02-21:31:52.812  [_dbg@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/profil.py:46]
+P time_limit: 900.0    P tpsjob: 16    A tpmax: 900.0
+
+>>> 2017/09/02-21:31:52.813  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:208]
+source list : ('/tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757',)
+destination : export
+
+>>> 2017/09/02-21:31:52.813  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:208]
+cmd :
+cp -L -r /tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757 export
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.818  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:221]
+source list : ('/tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757',)
+destination : /tmp/mmer547-mmer547-VirtualBox-interactif.2757/2757.export
+
+>>> 2017/09/02-21:31:52.819  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:221]
+cmd :
+cp -L -r /tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757 /tmp/mmer547-mmer547-VirtualBox-interactif.2757/2757.export
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.824  [RunAster@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execute.py:402]
+Start make_etude/make_env/make_dbg action
+
+--------------------------------------------------------------------------------
+ Code_Aster execution
+
+<INFO> prepare environment in /tmp/mmer547-mmer547-VirtualBox-interactif.2757
+
+--------------------------------------------------------------------------------
+ Copying datas
+
+
+>>> 2017/09/02-21:31:52.825  [copyfileD@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:566]
+source list : (u'/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/RunCase_2_Stage_1.comm',)
+destination : fort.1.1
+
+>>> 2017/09/02-21:31:52.826  [copyfileD@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:566]
+cmd :
+cp -L -r /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/RunCase_2_Stage_1.comm fort.1.1
+background : False
+follow_output : False
+copying .../mmer547-mmer547-VirtualBox-Sat-02-213151.922/RunCase_2_Stage_1.comm...
+                                                                        
+>>> 2017/09/02-21:31:52.831  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.831  [_check_filetype@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:708]
+cmd :
+file fort.1.1
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.856  [copyfileD@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:566]
+source list : (u'/tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/_ExportedFromSalomeObject_0_1_1_3.med',)
+destination : fort.20
+
+>>> 2017/09/02-21:31:52.856  [copyfileD@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:566]
+cmd :
+cp -L -r /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/_ExportedFromSalomeObject_0_1_1_3.med fort.20
+background : False
+follow_output : False
+[  OK  ]
+copying .../mmer547-mmer547-VirtualBox-Sat-02-213151.922/_ExportedFromSalomeObject_0_1_1_3.med...
+                                                                        
+>>> 2017/09/02-21:31:52.861  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.862  [_check_filetype@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:708]
+cmd :
+file fort.20
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.907  [execute@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:102]
+version supports: waf (True), nosuperv (False), orbinitref (True), numthreads (True)
+[  OK  ]
+<INFO> Parameters : memory 1024 MB - time limit 900 s
+
+--------------------------------------------------------------------------------
+ Content of /tmp/mmer547-mmer547-VirtualBox-interactif.2757 before execution
+
+
+>>> 2017/09/02-21:31:52.912  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.912  [execute@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:281]
+cmd :
+ls -la
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:52.920  [SetLimit@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:946]
+['core', 'RLIMIT_CORE', [-1, -1]]
+
+>>> 2017/09/02-21:31:52.920  [execute@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:342]
+source list : ('fort.1.1',)
+destination : fort.1
+
+>>> 2017/09/02-21:31:52.920  [execute@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:342]
+cmd :
+cp -L -r fort.1.1 fort.1
+background : False
+follow_output : False
+total 176
+drwx------  3 mmer547 mmer547   4096 Sep  2 21:31 .
+drwxrwxrwt 31 root    root      4096 Sep  2 21:31 ..
+-rw-rw-r--  1 mmer547 mmer547    904 Sep  2 21:31 2757.export
+-rw-rw-r--  1 mmer547 mmer547   3419 Sep  2 21:31 config.txt
+-rw-rw-r--  1 mmer547 mmer547    760 Sep  2 21:31 fort.1.1
+-rw-rw-r--  1 mmer547 mmer547 154894 Sep  2 21:31 fort.20
+drwxr-xr-x  2 mmer547 mmer547   4096 Sep  2 21:31 REPE_OUT
+
+
+--------------------------------------------------------------------------------
+ Code_Aster run
+
+<INFO> Command line 1 :
+<INFO> /home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/bin/aster /home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster/Execution/E_SUPERV.py -commandes fort.1 --num_job=2757 --mode=interactif --rep_outils=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/outils --rep_mat=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster/materiau --rep_dex=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster/datg --numthreads=2 --suivi_batch --memjeveux=128.0 --tpmax=900.0
+
+>>> 2017/09/02-21:31:52.951  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:52.951  [execute@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:373]
+cmd :
+( /home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/bin/aster /home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster/Execution/E_SUPERV.py -commandes fort.1 --num_job=2757 --mode=interactif --rep_outils=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/outils --rep_mat=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster/materiau --rep_dex=/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/../Code_aster_stable-v134_smeca/share/aster/datg --numthreads=2 --suivi_batch --memjeveux=128.0 --tpmax=900.0 ; echo EXECUTION_CODE_ASTER_EXIT_2757=$? ) | tee fort.6 ; exit `grep -a EXECUTION_CODE_ASTER_EXIT_2757 fort.6 | head -1 | sed -e 's/EXECUTION_CODE_ASTER_EXIT_2757=//'`
+background : False
+follow_output : True
+/home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster/aster_settings.py:244: DeprecationWarning: this command line option is deprecated : --rep_outils
+  coreopts.parse_args(argv or sys.argv)
+# ------------------------------------------------------------------------------------------
+# Impression du contenu du fichier de commandes à exécuter :
+# ------------------------------------------------------------------------------------------
+DEBUT()
+
+
+mesh = LIRE_MAILLAGE(UNITE=20)
+
+model = AFFE_MODELE(
+    AFFE=_F(MODELISATION=('3D', ), PHENOMENE='MECANIQUE', TOUT='OUI'),
+    MAILLAGE=mesh
+)
+
+mater = DEFI_MATERIAU(ELAS=_F(E=2e+11, NU=0.3))
+
+fieldmat = AFFE_MATERIAU(AFFE=_F(MATER=(mater, ), TOUT='OUI'), MAILLAGE=mesh)
+
+load = AFFE_CHAR_MECA(
+    DDL_IMPO=_F(DX=0.0, DY=0.0, DZ=0.0, GROUP_NO=('Group_1', )),
+    FORCE_NODALE=_F(FZ=-1000.0, GROUP_NO=('Group_2', )),
+    MODELE=model
+)
+
+reslin = MECA_STATIQUE(CHAM_MATER=fieldmat, EXCIT=_F(CHARGE=load), MODELE=model)
+
+reslin = CALC_CHAMP(
+    reuse=reslin,
+    CONTRAINTE=('SIGM_ELGA', 'SIGM_NOEU'),
+    CRITERES=('SIEQ_ELGA', 'SIEQ_NOEU'),
+    DEFORMATION=('EPSI_ELGA', 'EPSI_NOEU'),
+    RESULTAT=reslin
+)
+
+IMPR_RESU(FORMAT='MED', UNITE=80)
+
+FIN()
+# ------------------------------------------------------------------------------------------
+
+  Ouverture en écriture du fichier ./vola.1
+                                                                                
+                                                                                
+              -- CODE_ASTER -- VERSION : EXPLOITATION (stable) --               
+                                                                                
+                     Version 13.4.0 modifiée le 23/08/2017                      
+                     révision d2fb7e569019 - branche 'v13'                      
+                         Copyright EDF R&D 1991 - 2017                          
+                                                                                
+                    Exécution du : Sat Sep  2 21:31:54 2017                     
+                     Nom de la machine : mmer547-VirtualBox                     
+                              Architecture : 64bit                              
+                          Type de processeur : x86_64                           
+      Système d'exploitation : Linux debian stretch/sid  4.4.0-21-generic       
+                        Langue des messages : en (UTF-8)                        
+                                                                                
+                           Version de Python : 2.7.10                           
+                            Version de NumPy : 1.9.2                            
+                           Parallélisme MPI : inactif                           
+                          Parallélisme OpenMP : actif                           
+                        Nombre de processus utilisés : 2                        
+                     Version de la librairie HDF5 : 1.8.14                      
+                      Version de la librairie MED : 3.2.1                       
+                     Version de la librairie MFront : 3.0.0                     
+                     Version de la librairie MUMPS : 5.1.1                      
+                        Librairie PETSc : non disponible                        
+                     Version de la librairie SCOTCH : 6.0.4                     
+
+                  Mémoire limite pour l'exécution : 1024.00 Mo                  
+                   consommée par l'initialisation : 555.29 Mo                   
+                  par les objets du jeu de commandes : 1.96 Mo                  
+                 reste pour l'allocation dynamique : 466.75 Mo                  
+                Taille limite des fichiers d'échange : 12.00 Go                 
+                                                                                
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0001            Concept de type : -
+  # ------------------------------------------------------------------------------------------
+  DEBUT(INFO=1,
+        PAR_LOT='OUI',
+        IMPR_MACRO='NON',
+        DEBUG=_F(JEVEUX='NON',
+                 JXVERI='NON',
+                 HIST_ETAPE='NON',
+                 SDVERI='NON',),
+        MEMOIRE=_F(TAILLE_BLOC=800.0,
+                   TAILLE_GROUP_ELEM=1000,),
+        RESERVE_CPU=_F(BORNE=900,),
+        MESURE_TEMPS=_F(MOYENNE='NON',
+                        NIVE_DETAIL=1,),
+        )
+
+
+  Valeur initiale du temps CPU maximum =   900 secondes
+  Valeur du temps CPU maximum passé aux commandes =   810 secondes
+  Réserve CPU prévue = 90 secondes
+
+  Ouverture en écriture du fichier ./glob.1
+
+  Ouverture en écriture du fichier ./vola.1
+
+  Ouverture en lecture du fichier /home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster/elem.1
+
+     Nom de la base                          :  ELEMBASE
+     Créée avec la version                   :  13.04.00
+     Nombre d'enregistrements utilisés       :  44
+     Nombre d'enregistrements maximum        :  512
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre d'identificateurs utilisés       :  123
+     Taille maximum du répertoire            :  300
+     Pourcentage d'utilisation du répertoire :  41 %
+
+  Ouverture en lecture du fichier /home/mmer547/salome_meca/V2017/tools/Code_aster_stable-v134_smeca/lib/aster/elem.1
+
+
+     Nom de la base                          :  ELEMBASE
+     Nombre d'enregistrements utilisés       :  44
+     Nombre d'enregistrements maximum        :  512
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture         :  62
+     Volume des accès en lecture             :         48.44 Mo.
+     Nombre total d'accès en écriture        :  0
+     Volume des accès en écriture            :          0.00 Mo.
+     Nombre d'identificateurs utilisés       :  123
+     Taille maximum du répertoire            :  300
+     Pourcentage d'utilisation du répertoire :  41 %
+
+  Relecture des catalogues des éléments faite.
+
+  Fin de lecture (durée  0.178666  s.) 
+  # Mémoire (Mo) :   602.47 /   594.71 /    44.66 /    23.16 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0001   user+syst:        0.09s (syst:        0.06s, elaps:        0.20s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0002            Concept de type : maillage_sdaster
+  # ------------------------------------------------------------------------------------------
+  mesh = LIRE_MAILLAGE(UNITE=20,
+                       INFO_MED=1,
+                       INFO=1,
+                       FORMAT='MED',
+                       VERI_MAIL=_F(APLAT=1.E-3,
+                                    VERIF='OUI',),
+                       )
+
+Vérification du maillage.
+
+------------ MAILLAGE mesh     - IMPRESSIONS NIVEAU  1 ------------
+
+SA-02-SEPT-2017 21:31:54                                                        
+
+NOMBRE DE NOEUDS                        1809
+
+NOMBRE DE MAILLES                       3224
+                              SEG2                  816
+                              QUAD4                1608
+                              HEXA8                 800
+
+NOMBRE DE GROUPES DE NOEUDS                2
+                              Group_1                              9
+                              Group_2                              3
+
+NOMBRE DE GROUPES DE MAILLES               1
+                              Group_1                              4
+
+--------------------------------------------------------------------------------
+
+  # Mémoire (Mo) :   602.47 /   596.03 /    44.66 /    23.16 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0002   user+syst:        0.04s (syst:        0.01s, elaps:        0.06s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0003            Concept de type : modele_sdaster
+  # ------------------------------------------------------------------------------------------
+  model = AFFE_MODELE(MAILLAGE=mesh,
+                      AFFE=_F(PHENOMENE='MECANIQUE',
+                              TOUT='OUI',
+                              MODELISATION=('3D', ),),
+                      INFO=1,
+                      VERI_JACOBIEN='OUI',
+                      DISTRIBUTION=_F(PARTITIONNEUR='METIS',
+                                      METHODE='SOUS_DOMAINE',),
+                      )
+
+
+Sur les 3224 mailles du maillage mesh, on a demandé l'affectation de 3224, on a pu en affecter 3224
+ Modélisation     Type maille  Élément fini     Nombre
+                  SEG2         MECA_ARETE2      816
+                  QUAD4        MECA_FACE4       1608
+ 3D               HEXA8        MECA_HEXA8       800
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.01      0.01      0.01
+  # Mémoire (Mo) :   629.59 /   629.38 /    44.66 /    34.59 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0003   user+syst:        0.05s (syst:        0.04s, elaps:        0.04s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0004            Concept de type : mater_sdaster
+  # ------------------------------------------------------------------------------------------
+  mater = DEFI_MATERIAU(ELAS=_F(E=2.E11,
+                                NU=0.3,
+                                COEF_AMOR=1.0,),
+                        INFO=1,)
+
+
+ MATERIAU : mater   
+ RELATION DE COMPORTEMENT: ELAS                            
+
+
+  # Mémoire (Mo) :   629.59 /   629.38 /    44.66 /    34.59 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0004   user+syst:        0.01s (syst:        0.01s, elaps:        0.01s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0005            Concept de type : cham_mater
+  # ------------------------------------------------------------------------------------------
+  fieldmat = AFFE_MATERIAU(MAILLAGE=mesh,
+                           AFFE=_F(MATER=(mater, ),
+                                   TOUT='OUI',),
+                           INFO=1,
+                           )
+
+  # Mémoire (Mo) :   629.59 /   629.38 /    44.66 /    34.59 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0005   user+syst:        0.04s (syst:        0.03s, elaps:        0.03s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0006            Concept de type : char_meca
+  # ------------------------------------------------------------------------------------------
+  load = AFFE_CHAR_MECA(MODELE=model,
+                        DDL_IMPO=_F(GROUP_NO=('Group_1', ),
+                                    DZ=0.0,
+                                    DX=0.0,
+                                    DY=0.0,),
+                        FORCE_NODALE=_F(GROUP_NO=('Group_2', ),
+                                        FZ=-1000.0,),
+                        INFO=1,
+                        VERI_NORM='OUI',)
+
+  # Mémoire (Mo) :   629.61 /   629.54 /    44.66 /    34.59 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0006   user+syst:        0.02s (syst:        0.02s, elaps:        0.02s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0007            Concept de type : evol_elas
+  # ------------------------------------------------------------------------------------------
+  reslin = MECA_STATIQUE(CHAM_MATER=fieldmat,
+                         MODELE=model,
+                         EXCIT=_F(CHARGE=load,
+                                  TYPE_CHARGE='FIXE_CSTE',),
+                         INFO=1,
+                         OPTION='SIEF_ELGA',
+                         SOLVEUR=_F(RENUM='METIS',
+                                    STOP_SINGULIER='OUI',
+                                    ELIM_LAGR='NON',
+                                    NPREC=8,
+                                    METHODE='MULT_FRONT',),
+                         )
+
+
+Le système linéaire à résoudre a 5481 degrés de liberté:
+   - 5427 sont des degrés de liberté physiques
+     (ils sont portés par 1809 noeuds du maillage)
+   - 54 sont les couples de paramètres de Lagrange associés
+     aux 27 relations linéaires dualisées.
+
+La matrice est de taille 5481 équations.
+Elle contient 135477 termes non nuls si elle est symétrique et 265473 termes non nuls si elle n'est pas symétrique.
+Soit un taux de remplissage de   0.884 %.
+   CHAMP STOCKE :             DEPL INSTANT :  0.00000E+00  NUMERO D'ORDRE :     1
+#1      Resolution des systemes lineaires                 CPU (USER+SYST/SYST/ELAPS):      0.18      0.02      0.17
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.05      0.00      0.07
+  # Mémoire (Mo) :   648.98 /   642.54 /    45.37 /    38.02 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0007   user+syst:        0.29s (syst:        0.04s, elaps:        0.27s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0008            Concept de type : evol_elas
+  # ------------------------------------------------------------------------------------------
+  reslin = CALC_CHAMP(reuse=reslin,
+                      RESULTAT=reslin,
+                      PRECISION=1.E-06,
+                      CRITERES=('SIEQ_ELGA', 'SIEQ_NOEU'),
+                      CONTRAINTE=('SIGM_ELGA', 'SIGM_NOEU'),
+                      DEFORMATION=('EPSI_ELGA', 'EPSI_NOEU'),
+                      INFO=1,
+                      CRITERE='RELATIF',)
+
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.09      0.04      0.06
+  # Mémoire (Mo) :   648.98 /   645.69 /    45.37 /    38.02 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0008   user+syst:        0.22s (syst:        0.08s, elaps:        0.14s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0009            Concept de type : -
+  # ------------------------------------------------------------------------------------------
+  IMPR_RESU(FORMAT='MED',
+            UNITE=80,
+            INFO=1,
+            PROC0='OUI',)
+
+  # Mémoire (Mo) :   648.98 /   645.69 /    45.37 /    38.02 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0009   user+syst:        0.00s (syst:        0.00s, elaps:        0.00s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0010            Concept de type : -
+  # ------------------------------------------------------------------------------------------
+  FIN(INFO_RESU='OUI',
+      RETASSAGE='NON',
+      FORMAT_HDF='NON',
+      PROC0='OUI',)
+
+   
+   !-------------------------------------------------------------------------!
+   ! <I> <CATAMESS_89>                                                       !
+   !                                                                         !
+   !     Liste des alarmes émises lors de l'exécution du calcul.             !
+   !                                                                         !
+   !     Les alarmes que vous avez choisies d'ignorer sont précédées de (*). !
+   !     Nombre d'occurrences pour chacune des alarmes :                     !
+   !            aucune alarme                                                !
+   !-------------------------------------------------------------------------!
+   
+
+ ======>
+
+ STRUCTURE DU CONCEPT reslin   CALCULE POUR 1 NUMERO D'ORDRE
+
+ LISTE DES NOMS SYMBOLIQUES:
+ ! ---------- !----------------!----------------!----------------!----------------!----------------!----------------!----------------!----------------!
+ ! NUME_ORDRE !      DEPL      !   EPSI_ELGA    !   EPSI_NOEU    !   SIEF_ELGA    !   SIGM_ELGA    !   SIGM_NOEU    !   SIEQ_ELGA    !   SIEQ_NOEU    !
+ ! ---------- !----------------!----------------!----------------!----------------!----------------!----------------!----------------!----------------!
+ !          1 !     DEPL_R     !     EPSI_R     !     EPSI_R     !     SIEF_R     !     SIEF_R     !     SIEF_R     !     SIEF_R     !     SIEF_R     !
+ ! ---------- !----------------!----------------!----------------!----------------!----------------!----------------!----------------!----------------!
+
+ LISTE DES NOMS DE VARIABLES D'ACCES:
+                                      INST             DE TYPE  R
+
+ LISTE DES NOMS DE PARAMETRES:
+ ! ---------- !----------------!----------------!----------------!----------------!----------------!----------------!----------------!----------------!
+ ! NUME_ORDRE !    CARAELEM    !    CHAMPMAT    !     EXCIT      !   ITER_GCPC    !    METHODE     !     MODELE     !     RENUM      !    STOCKAGE    !
+ ! ---------- !----------------!----------------!----------------!----------------!----------------!----------------!----------------!----------------!
+ !          1 !       K8       !       K8       !      K24       !       I        !      K16       !       K8       !      K16       !      K16       !
+ ! ---------- !----------------!----------------!----------------!----------------!----------------!----------------!----------------!----------------!
+ ---------------------------------------------------------------------------
+ Concepts de la base: G
+    Nom       Type                 Taille (Mo)         Nombre      Nombre de
+                                                     d'objets       segments
+    TOTAL                                32.29            183            318
+  
+    mesh       MAILLAGE_SDASTER           0.35             36             60
+    model      MODELE_SDASTER             0.17              8             13
+    mater      MATER_SDASTER              0.00              5              5
+    fieldmat   CHAM_MATER                 0.00              6             11
+    load       CHAR_MECA                  0.08             28             53
+    reslin     EVOL_ELAS                  4.07             55             70
+    &FOZERO                               0.00              2              2
+    &&_NUM_C                              0.00              1              1
+    &CATA.AC                              0.00              2              4
+    &CATA.CL                              0.86              1              3
+    &CATA.GD                              0.14              4             11
+    &CATA.ME                              0.20              2              4
+    &CATA.OP                              0.32              4             19
+    &CATA.PH                              0.00              1              1
+    &CATA.PR                              0.00              2              4
+    &CATA.TE                             26.07             17             42
+    &CATA.TH                              0.01              2              4
+    &CATA.TM                              0.01              7             11
+ ---------------------------------------------------------------------------
+
+
+     Nom de la base                          :  GLOBALE
+     Nombre d'enregistrements utilisés       :  54
+     Nombre d'enregistrements maximum        :  62914
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture         :  7
+     Volume des accès en lecture             :          5.47 Mo.
+     Nombre total d'accès en écriture        :  68
+     Volume des accès en écriture            :         53.12 Mo.
+     Nombre d'identificateurs utilisés       :  333
+     Taille maximum du répertoire            :  2000
+     Pourcentage d'utilisation du répertoire :  16 %
+
+
+     Nom de la base                          :  VOLATILE
+     Nombre d'enregistrements utilisés       :  3
+     Nombre d'enregistrements maximum        :  62914
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture         :  0
+     Volume des accès en lecture             :          0.00 Mo.
+     Nombre total d'accès en écriture        :  4
+     Volume des accès en écriture            :          3.12 Mo.
+     Nombre d'identificateurs utilisés       :  595
+     Taille maximum du répertoire            :  2000
+     Pourcentage d'utilisation du répertoire :  29 %
+
+ <FIN> Arrêt normal dans "FIN".
+
+ La mémoire demandée au lancement est surestimée, elle est de 1024.00 Mo.
+ Le pic mémoire utilisée est de 648.98 Mo.
+
+
+
+     Nom de la base                          :  ELEMBASE
+     Nombre d'enregistrements utilisés       :  44
+     Nombre d'enregistrements maximum        :  512
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture         :  62
+     Volume des accès en lecture             :         48.44 Mo.
+     Nombre total d'accès en écriture        :  0
+     Volume des accès en écriture            :          0.00 Mo.
+     Nombre d'identificateurs utilisés       :  123
+     Taille maximum du répertoire            :  300
+     Pourcentage d'utilisation du répertoire :  41 %
+  
+ <I>       FERMETURE DES BASES EFFECTUEE
+  
+   STATISTIQUES CONCERNANT L'ALLOCATION DYNAMIQUE :
+     TAILLE CUMULEE MAXIMUM            :                   45  Mo.
+     TAILLE CUMULEE LIBEREE            :                   13  Mo.
+     NOMBRE TOTAL D'ALLOCATIONS        :                 7055
+     NOMBRE TOTAL DE LIBERATIONS       :                 7035
+     APPELS AU MECANISME DE LIBERATION :                    0
+     TAILLE MEMOIRE CUMULEE RECUPEREE  :                    0  Mo.
+     VOLUME DES LECTURES               :                    0  Mo.
+     VOLUME DES ECRITURES              :                    0  Mo.
+  
+   MEMOIRE JEVEUX MINIMALE REQUISE POUR L'EXECUTION :      38.02 Mo
+     - IMPOSE DE NOMBREUX ACCES DISQUE
+     - RALENTIT LA VITESSE D'EXECUTION
+   MEMOIRE JEVEUX OPTIMALE REQUISE POUR L'EXECUTION :      45.37 Mo
+     - LIMITE LES ACCES DISQUE
+     - AMELIORE LA VITESSE D'EXECUTION
+   MAXIMUM DE MEMOIRE UTILISEE PAR LE PROCESSUS     :     648.98 Mo
+     - COMPREND LA MEMOIRE CONSOMMEE PAR  JEVEUX, 
+       LE SUPERVISEUR PYTHON, LES LIBRAIRIES EXTERNES
+  
+ <I>       FIN D'EXECUTION LE : SA-02-SEPT-2017 21:31:55
+
+
+  <I> Informations sur les temps d'exécution
+      Temps cpu user total                    1.19 s
+      Temps cpu systeme total                 0.44 s
+      Temps elapsed total                     1.89 s
+      Temps restant                         808.11 s
+
+
+  La signature de la base sauvegardée est (à l'adresse 0) :
+    0778228b865d8e4e319d4b4a7dadc6f906eb75bb
+
+ ********************************************************************************
+ * COMMAND                  :       USER :     SYSTEM :   USER+SYS :    ELAPSED *
+ ********************************************************************************
+ * init (jdc)               :       0.68 :       0.09 :       0.77 :       0.97 *
+ *  . compile               :       0.00 :       0.00 :       0.00 :       0.00 *
+ *  . exec_compile          :       0.04 :       0.04 :       0.08 :       0.21 *
+ *  . report                :       0.00 :       0.00 :       0.00 :       0.01 *
+ *  . build                 :       0.00 :       0.00 :       0.00 :       0.00 *
+ * DEBUT                    :       0.03 :       0.06 :       0.09 :       0.20 *
+ * LIRE_MAILLAGE            :       0.03 :       0.01 :       0.04 :       0.06 *
+ * AFFE_MODELE              :       0.01 :       0.04 :       0.05 :       0.04 *
+ * DEFI_MATERIAU            :       0.00 :       0.01 :       0.01 :       0.01 *
+ * AFFE_MATERIAU            :       0.01 :       0.03 :       0.04 :       0.03 *
+ * AFFE_CHAR_MECA           :       0.00 :       0.02 :       0.02 :       0.02 *
+ * MECA_STATIQUE            :       0.25 :       0.04 :       0.29 :       0.27 *
+ * CALC_CHAMP               :       0.14 :       0.08 :       0.22 :       0.14 *
+ * IMPR_RESU                :       0.00 :       0.00 :       0.00 :       0.00 *
+ * FIN                      :       0.01 :       0.05 :       0.06 :       0.07 *
+ *  . part Superviseur      :       0.75 :       0.16 :       0.91 :       1.25 *
+ *  . part Fortran          :       0.44 :       0.28 :       0.72 :       0.64 *
+ ********************************************************************************
+ * TOTAL_JOB                :       1.19 :       0.44 :       1.63 :       1.89 *
+ ********************************************************************************
+
+EXECUTION_CODE_ASTER_EXIT_2757=0
+
+>>> 2017/09/02-21:31:56.866  [_diag_erre@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/build.py:1434]
+n_debut=1, n_fin=1, mess=False : ok=True
+
+>>> 2017/09/02-21:31:56.866  [_diag_erre@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/build.py:1435]
+alarm=False, errs=False, fatal=False, exitcode=0
+
+>>> 2017/09/02-21:31:56.866  [getDiag@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/build.py:1539]
+Fichier : fort.9
+_diag_erre : OK
+
+>>> 2017/09/02-21:31:56.868  [getDiag@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/build.py:1555]
+Fichier : fort.8
+_diag_resu : OK
+
+>>> 2017/09/02-21:31:56.870  [_diag_erre@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/build.py:1434]
+n_debut=1, n_fin=0, mess=True : ok=True
+
+>>> 2017/09/02-21:31:56.870  [_diag_erre@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/build.py:1435]
+alarm=False, errs=False, fatal=False, exitcode=0
+
+>>> 2017/09/02-21:31:56.870  [getDiag@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/build.py:1557]
+Fichier : fort.6
+_diag_erre : OK
+<INFO> Code_Aster run ended, diagnostic : OK
+
+--------------------------------------------------------------------------------
+ Content of /tmp/mmer547-mmer547-VirtualBox-interactif.2757 after execution
+
+
+>>> 2017/09/02-21:31:56.870  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:56.871  [execute@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:488]
+cmd :
+ls -la . REPE_OUT
+background : False
+follow_output : False
+.:
+total 49624
+drwx------  3 mmer547 mmer547     4096 Sep  2 21:31 .
+drwxrwxrwt 31 root    root        4096 Sep  2 21:31 ..
+-rw-rw-r--  1 mmer547 mmer547      904 Sep  2 21:31 2757.export
+-rw-rw-r--  1 mmer547 mmer547     3419 Sep  2 21:31 config.txt
+-rw-rw-r--  1 mmer547 mmer547      760 Sep  2 21:31 fort.1
+-rw-rw-r--  1 mmer547 mmer547      760 Sep  2 21:31 fort.1.1
+-rw-rw-r--  1 mmer547 mmer547        0 Sep  2 21:31 fort.15
+-rw-rw-r--  1 mmer547 mmer547   154894 Sep  2 21:31 fort.20
+-rw-rw-r--  1 mmer547 mmer547    25486 Sep  2 21:31 fort.6
+-rw-rw-r--  1 mmer547 mmer547     4914 Sep  2 21:31 fort.8
+-rw-rw-r--  1 mmer547 mmer547        0 Sep  2 21:31 fort.80
+-rw-rw-r--  1 mmer547 mmer547     2747 Sep  2 21:31 fort.9
+-rw-rw-r--  1 mmer547 mmer547 44236808 Sep  2 21:31 glob.1
+-rw-rw-r--  1 mmer547 mmer547       44 Sep  2 21:31 info_cpu
+-rw-rw-r--  1 mmer547 mmer547  4694463 Sep  2 21:31 pick.1
+drwxr-xr-x  2 mmer547 mmer547     4096 Sep  2 21:31 REPE_OUT
+-rw-rw-r--  1 mmer547 mmer547  2457608 Sep  2 21:31 vola.1
+
+REPE_OUT:
+total 8
+drwxr-xr-x 2 mmer547 mmer547 4096 Sep  2 21:31 .
+drwx------ 3 mmer547 mmer547 4096 Sep  2 21:31 ..
+
+
+--------------------------------------------------------------------------------
+ Size of bases
+
+<INFO> size of vola.1 :      2457608 bytes
+<INFO> size of glob.1 :     44236808 bytes
+<INFO> size of pick.1 :      4694463 bytes
+
+--------------------------------------------------------------------------------
+ Copying results
+
+
+>>> 2017/09/02-21:31:56.913  [copyfileR@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:665]
+source list : ('fort.80',)
+destination : /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/test.rmed
+
+>>> 2017/09/02-21:31:56.913  [copyfileR@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:665]
+cmd :
+cp -L -r fort.80 /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/test.rmed
+background : False
+follow_output : False
+copying .../fort.80...                                                  
+>>> 2017/09/02-21:31:56.919  [copyfileR@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:665]
+source list : ('fort.6',)
+destination : /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/message
+
+>>> 2017/09/02-21:31:56.919  [copyfileR@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:665]
+cmd :
+cp -L -r fort.6 /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/message
+background : False
+follow_output : False
+[  OK  ]
+copying .../fort.6...                                                   
+>>> 2017/09/02-21:31:56.924  [Gzip@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:552]
+cmd :
+gzip glob.1
+background : False
+follow_output : False
+[  OK  ]
+compressing glob.1                                                      
+>>> 2017/09/02-21:31:59.159  [Gzip@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:552]
+cmd :
+gzip pick.1
+background : False
+follow_output : False
+[  OK  ]
+compressing pick.1                                                      
+>>> 2017/09/02-21:31:59.378  [copyfileR@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:665]
+source list : ('glob.1.gz', 'pick.1.gz')
+destination : /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/base-stage1
+
+>>> 2017/09/02-21:31:59.378  [copyfileR@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:665]
+cmd :
+cp -L -r glob.1.gz /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/base-stage1
+background : False
+follow_output : False
+[  OK  ]
+copying .../glob.1.gz...                                                
+>>> 2017/09/02-21:31:59.417  [copyfileR@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/execution.py:665]
+cmd :
+cp -L -r pick.1.gz /tmp/salome_localres_workdir_mmer547/mmer547-mmer547-VirtualBox-Sat-02-213151.922/base-stage1
+background : False
+follow_output : False
+[  OK  ]
+copying .../pick.1.gz...                                                [  OK  ]
+
+OK                 Code_Aster run ended
+
+
+>>> 2017/09/02-21:31:59.424  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:59.424  [_clear_tmp@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/run.py:484]
+cmd :
+\rm -rf /tmp/astk_mmer547/mmer547-mmer547-VirtualBox-profil_astk.2757
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:59.428  [Shell@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/system.py:517]
+remote command ( <> mmer547-VirtualBox and mmer547 <> mmer547) ? False
+
+>>> 2017/09/02-21:31:59.428  [_clear_tmp@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/run.py:484]
+cmd :
+\rm -rf /tmp/mmer547-mmer547-VirtualBox-interactif.2757
+background : False
+follow_output : False
+
+>>> 2017/09/02-21:31:59.433  [Sortie@/home/mmer547/salome_meca/V2017/tools/Code_aster_frontend-20170/lib/python2.7/site-packages/asrun/run.py:733]
+exit 0
+
+ 
+ ---------------------------------------------------------------------------------
+                                            cpu     system    cpu+sys    elapsed
+ ---------------------------------------------------------------------------------
+   Preparation of environment              0.00       0.00       0.00       0.00
+   Copying datas                           0.01       0.03       0.04       0.08
+   Code_Aster run                          2.94       0.67       3.61       3.91
+   Copying results                         2.36       0.09       2.45       2.51
+ ---------------------------------------------------------------------------------
+   Total                                   5.37       0.84       6.21       6.73
+ ---------------------------------------------------------------------------------
+
+as_run 2017.0
+
+------------------------------------------------------------
+--- DIAGNOSTIC JOB : OK
+------------------------------------------------------------
+
+
+EXIT_CODE=0

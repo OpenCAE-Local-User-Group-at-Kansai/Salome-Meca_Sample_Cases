@@ -1,0 +1,20 @@
+P actions make_etude
+P memjob 1048576
+P memory_limit 1024.0
+P mode interactif
+P mpi_nbcpu 1
+P mpi_nbnoeud 1
+P ncpus 
+P nomjob RunCase_2_Stage_1
+P origine AsterStudy 2017.0
+P studyid 2566-0001-mmer547-VirtualBox
+P time_limit 900.0
+P tpsjob 16
+P version stable
+A memjeveux 128.0
+A tpmax 900.0
+F comm RunCase_2_Stage_1.comm D  1
+F libr _ExportedFromSalomeObject_0_1_1_3.med D  20
+F libr test.rmed R  80
+F mess message R  6
+R base base-stage1 RC 0

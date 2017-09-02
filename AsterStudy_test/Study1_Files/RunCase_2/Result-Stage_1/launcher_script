@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/mmer547/salome_meca/appli_V2017/salome shell -- as_run export
