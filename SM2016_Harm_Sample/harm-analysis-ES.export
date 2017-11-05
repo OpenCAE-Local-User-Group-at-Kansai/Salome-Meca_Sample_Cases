@@ -1,4 +1,4 @@
-P profastk foamer@foamer-VirtualBox:/home/foamer/Desktop/Freq_test_2016/modal-analysis-ES.astk
+P profastk foamer@foamer-VirtualBox:/home/foamer/Desktop/Harm_test_2016/harm-analysis-ES.astk
 P serveur localhost
 P username foamer
 P aster_root /home/foamer/salome_meca/V2016/tools/Code_aster_frontend-20160
@@ -23,7 +23,7 @@ P after_job
 P distrib 
 P exectool 
 P multiple 
-P nomjob modal-analysis-ES
+P nomjob harm-analysis-ES
 P origine ASTK 2016.0
 P display foamer-VirtualBox:0.0
 A ORBInitRef NameService=corbaname::foamer-VirtualBox:2816
@@ -38,13 +38,13 @@ P cpresok RESNOOK
 P only_nook 
 P facmtps 1
 P corefilesize unlimited
-F comm /home/foamer/Desktop/Freq_test_2016/sdnv110rev.comm D 1
-F mmed /home/foamer/Desktop/Freq_test_2016/Harm-analysis-ES.mmed D 20
-F mess /home/foamer/Desktop/Freq_test_2016/Harm-analysis-ES.mess R 6
-F resu /home/foamer/Desktop/Freq_test_2016/Harm-analysis-ES.resu R 8
-F rmed /home/foamer/Desktop/Freq_test_2016/Harm-analysis-ES_reel.rmed R 80
-R base /home/foamer/Desktop/Freq_test_2016/Harm-analysis-ES.base RC 0
-F rmed /home/foamer/Desktop/Freq_test_2016/Harm-analysis-ES_imag.rmed R 81
+F comm ./harm-analysis-ES.comm D 1
+F mmed ./harm-analysis-ES.mmed D 20
+F mess ./harm-analysis-ES.mess R 6
+F resu ./harm-analysis-ES.resu R 8
+F rmed ./harm-analysis-ES_reel.rmed R 80
+R base ./harm-analysis-ES.base RC 0
+F libr ./harm-analysis-ES_imag.rmed R 81
 P consbtc oui
 P soumbtc oui
 P actions make_etude

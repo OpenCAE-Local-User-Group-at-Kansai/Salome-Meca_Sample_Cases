@@ -38,12 +38,12 @@ P cpresok RESNOOK
 P only_nook 
 P facmtps 1
 P corefilesize unlimited
-F comm /home/foamer/Desktop/modal_test_2016/sdnv110rev.comm D 1
-F mmed /home/foamer/Desktop/modal_test_2016/modal-analysis-ES.mmed D 20
-F mess /home/foamer/Desktop/modal_test_2016/modal-analysis-ES.mess R 6
-F resu /home/foamer/Desktop/modal_test_2016/modal-analysis-ES.resu R 8
-F rmed /home/foamer/Desktop/modal_test_2016/modal-analysis-ES.rmed R 80
-R base /home/foamer/Desktop/modal_test_2016/modal-analysis-ES.base RC 0
+F comm ./modal-analysis-ES.comm D 1
+F mmed ./modal-analysis-ES.mmed D 20
+F mess ./modal-analysis-ES.mess R 6
+F resu ./modal-analysis-ES.resu R 8
+F rmed ./modal-analysis-ES.rmed R 80
+R base ./modal-analysis-ES.base RC 0
 P consbtc oui
 P soumbtc oui
 P actions make_etude
