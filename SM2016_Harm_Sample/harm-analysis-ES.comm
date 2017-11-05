@@ -1,0 +1,137 @@
+
+DEBUT(IGNORE_ALARM='UTILITAI4_2',);
+
+# ignore this alarm when computing modal stresses, because :
+# - for modal analysis, there is no external force
+# - boundary conditions are already embedded in the data structure
+#       produced by CALC_MODES
+##########################################
+
+
+# MESH AND MODEL
+##########################################
+
+
+MAIL=LIRE_MAILLAGE(UNITE=20,
+                   FORMAT='MED',);
+
+MODELE=AFFE_MODELE(MAILLAGE=MAIL,
+                   AFFE=_F(TOUT='OUI',
+                           PHENOMENE='MECANIQUE',
+                           MODELISATION='3D',),);
+#########################################
+
+
+# ELEMENTS' CHARACTERISTICS
+#########################################
+#########################################
+
+
+# MATERIAL
+#########################################
+
+
+MAT=DEFI_MATERIAU(ELAS=_F(E=2.1e+11,
+                          NU=0.3,
+                          RHO=7800.0,),);
+
+CHMAT=AFFE_MATERIAU(MAILLAGE=MAIL,
+                    AFFE=_F(TOUT='OUI',
+                            MATER=MAT,),);
+##########################################
+
+
+# BOUNDARY CONDITIONS
+##########################################
+
+
+BLOCAGE=AFFE_CHAR_MECA(MODELE=MODELE,
+                       DDL_IMPO=_F(GROUP_MA='Group_1',
+                                   DX=0.0,
+                                   DY=0.0,
+                                   DZ=0.0,),
+                       FORCE_FACE=_F(GROUP_MA='Group_2',
+                                     FX=1.0,),);
+###############################################
+
+
+# COMPUTATION OF MASS AND STIFFNESS MATRICES
+###############################################
+
+
+ASSEMBLAGE(MODELE=MODELE,
+           CHAM_MATER=CHMAT,
+           CHARGE=BLOCAGE,
+           NUME_DDL=CO('NUMEDDL'),
+           MATR_ASSE=(_F(MATRICE=CO('RIGIDITE'),
+                         OPTION='RIGI_MECA',),
+                      _F(MATRICE=CO('MASSE'),
+                         OPTION='MASS_MECA',),),);
+######################################
+
+
+# MODAL ANALYSIS
+######################################
+
+##MODES=CALC_MODES(
+##OPTION='PLUS_PETITE',
+##MATR_RIGI=RIGIDITE,
+##MATR_MASS=MASSE,
+##
+##CALC_FREQ=_F(NMAX_FREQ=5,),
+##);
+##Fin Commentaire
+
+vent=CALC_VECT_ELEM(OPTION='CHAR_MECA',
+                    CHARGE=BLOCAGE,);
+
+vectass=ASSE_VECTEUR(VECT_ELEM=vent,
+                     NUME_DDL=NUMEDDL,);
+
+Lfreq=DEFI_LIST_REEL(DEBUT=0.00,
+                     INTERVALLE=_F(JUSQU_A=1.0,
+                                   PAS=0.01,),);
+
+dynaharm=DYNA_LINE_HARM(MATR_MASS=MASSE,
+                        MATR_RIGI=RIGIDITE,
+                        LIST_FREQ=Lfreq,
+                        EXCIT=_F(VECT_ASSE=vectass,
+                                 COEF_MULT=1.0,),);
+######################################
+
+
+# MODAL STRESSES
+######################################
+
+
+dynaharm=CALC_CHAMP(reuse =dynaharm,
+                    RESULTAT=dynaharm,
+                    CONTRAINTE='SIEF_ELGA',);
+######################################
+
+
+# PRINT THE RESULTS
+######################################
+
+
+#IMPR_RESU(FORMAT='MED',
+#          RESU=_F(RESULTAT=dynaharm,
+#                  NOM_CHAM='ACCE',
+#                  NOEUD='N196',),);
+
+IMPR_RESU(FORMAT='MED',
+          UNITE=80,
+          RESU=_F(MAILLAGE=MAIL,
+                  RESULTAT=dynaharm,
+                  PARTIE='REEL',
+                  NOM_CHAM='DEPL',),);
+
+IMPR_RESU(FORMAT='MED',
+          UNITE=81,
+          RESU=_F(MAILLAGE=MAIL,
+                  RESULTAT=dynaharm,
+                  PARTIE='IMAG',
+                  NOM_CHAM='DEPL',),);
+
+FIN();
+#CHECKSUM:3655802c3546f1e9583bfc5d30ec5b88  -:FIN CHECKSUM
