@@ -1,0 +1,92 @@
+DEBUT(IGNORE_ALARM='UTILITAI4_2');
+# ignore this alarm when computing modal stresses, because :
+# - for modal analysis, there is no external force
+# - boundary conditions are already embedded in the data structure
+#       produced by CALC_MODES
+ 
+##########################################
+# MESH AND MODEL
+##########################################
+MAIL=LIRE_MAILLAGE(UNITE=20,
+                   FORMAT='MED',);
+
+MODELE=AFFE_MODELE(MAILLAGE=MAIL,
+                   AFFE=_F(TOUT='OUI',
+                           PHENOMENE='MECANIQUE',
+                           MODELISATION='3D',),);
+#########################################
+# ELEMENTS' CHARACTERISTICS
+#########################################
+
+
+
+#########################################
+# MATERIAL
+#########################################
+
+MAT=DEFI_MATERIAU(ELAS=_F(E=2.1e+11,
+                          NU=0.3,
+                          RHO=7800.0,),);
+
+CHMAT=AFFE_MATERIAU(MAILLAGE=MAIL,
+                    AFFE=_F(TOUT='OUI',
+                            MATER=MAT,),);
+
+##########################################
+# BOUNDARY CONDITIONS
+##########################################
+BLOCAGE=AFFE_CHAR_MECA(MODELE=MODELE,
+                       DDL_IMPO=(
+                           _F(GROUP_MA='Group_1',
+                              DX=0.0,
+                              DY=0.0,
+                              DZ=0.0,),
+                           ),
+                       );
+
+###############################################
+# COMPUTATION OF MASS AND STIFFNESS MATRICES
+###############################################
+
+ASSEMBLAGE(MODELE=MODELE,
+           CHAM_MATER=CHMAT,
+           CHARGE=BLOCAGE,
+           
+           NUME_DDL=CO('NUMEDDL'),
+           MATR_ASSE=(_F(MATRICE=CO('RIGIDITE'),
+                         OPTION='RIGI_MECA',),
+                      _F(MATRICE=CO('MASSE'),
+                         OPTION='MASS_MECA',),
+                     ),
+          );
+
+
+######################################
+# MODAL ANALYSIS
+######################################
+
+MODES=CALC_MODES(MATR_RIGI=RIGIDITE,
+                 MATR_MASS=MASSE,
+                 OPTION='PLUS_PETITE',
+                 CALC_FREQ=_F(
+                              NMAX_FREQ=5,)
+                 );
+
+
+######################################
+# MODAL STRESSES
+######################################
+
+MODES=CALC_CHAMP(reuse=MODES,
+                 RESULTAT=MODES,
+                 CONTRAINTE=('SIEF_ELGA'),);
+
+######################################
+# PRINT THE RESULTS
+######################################
+
+IMPR_RESU(FORMAT='MED',
+          RESU=_F(RESULTAT=MODES,),);
+
+
+FIN();
